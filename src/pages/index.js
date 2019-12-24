@@ -1,20 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Project from "../components/Project"
+
+const projects = [
+  { name: "whoops a daisy", color: "", description: "" },
+  { name: "greenhouse", color: "", description: "" },
+  { name: "whoops a daisy", color: "", description: "" },
+]
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1 className="text-6xl md:fixed leading-none mb-8 my-name">Zolon</h1>
+    <h1 className="text-5xl">projects</h1>
+    <section>
+      {projects.map(p => (
+        <Project {...p} />
+      ))}
+    </section>
   </Layout>
 )
 
