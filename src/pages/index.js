@@ -17,6 +17,7 @@ function IndexPage(props) {
                 description
                 name
                 color
+                link
               }
             }
           }
