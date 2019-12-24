@@ -8,7 +8,10 @@ module.exports = {
         sand: "#F4E3B2",
       },
       fontSize: {
-        "7xl": "5rem",
+        "7xl": "6rem",
+      },
+      width: {
+        72: "18rem",
       },
     },
   },
