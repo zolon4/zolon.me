@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `zolon.me`,
-    description: `the boy`,
-    author: `@zolon4`,
+    author: `@zolonw`,
+    description: ``,
+    image: `/images/og.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

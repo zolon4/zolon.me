@@ -10,8 +10,10 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main className="px-8 md:px-16">{children}</main>
-      <footer className="relative md:fixed w-full bottom-0 flex justify-center md:justify-end px-8">
-        <Logo />
+      <footer className="relative md:fixed w-full bottom-0 flex justify-center md:justify-end p-8">
+        <a href="https://dingo.rodeo">
+          <Logo />
+        </a>
       </footer>
     </>
   )
