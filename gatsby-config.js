@@ -35,6 +35,18 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: `keydYi1iAUNaNRWlN`,
+        tables: [
+          {
+            baseId: `appzxa8oRyeBmpUW4`,
+            tableName: `projects`,
+          },
+        ],
+      },
+    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
